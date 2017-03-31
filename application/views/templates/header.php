@@ -5,22 +5,28 @@
 	<meta charset="utf-8">
 	<title>Vida Plena</title> 
 	<link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap.min.css'); ?>" rel="stylesheet">
-	<link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap-theme.min.css'); ?>" rel="stylesheet">
-	<link href="<?php echo base_url('assets/cover.css'); ?>" rel="stylesheet"> 
-	<link href="<?php echo base_url('assets/custom.css'); ?>" rel="stylesheet"> 
+	<!-- <link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap-theme.min.css'); ?>" rel="stylesheet"> -->
+	<link href="<?php echo base_url('assets/css/cover.css'); ?>" rel="stylesheet"> 
+	<link href="<?php echo base_url('assets/css/custom.css'); ?>" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body> 
 <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
-      <header class="masthead clearfix">
+      <header class="masthead clearfix"> 
       	<div class="inner">
-			<h3 class="masthead-brand">Cover</h3>
+			<h3 class="masthead-brand mt-n">
+				<img src="<?php echo base_url('assets/images/vidaplena.png'); ?>" /> 
+			</h3>
           	<nav>
 	            <ul class="nav masthead-nav">
-	              <li class="active"><a href="http://getbootstrap.com/examples/cover/#">Home</a></li>
-	              <li><a href="http://getbootstrap.com/examples/cover/#">Features</a></li>
-	              <li><a href="http://getbootstrap.com/examples/cover/#">Contact</a></li>
+	              <li class="<?php echo $active['faq']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Preguntas Frecuentes</a></li>
+	              <li class="<?php echo $active['blog']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Blog</a></li>
+	              <li class="<?php echo $active['contacto']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Contacto</a></li>
+	              <li><a class="" href="#" style="padding: 4px; font-size: 20px;">
+	              	<label class="label label-pink radius">Iniciar Sesión</label> 
+	              </a></li>
 	            </ul>
           	</nav>
 		</div>

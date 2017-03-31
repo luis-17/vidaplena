@@ -3,11 +3,11 @@
  */
 
 /* Links */
-a,
+/*a,
 a:focus,
 a:hover {
   color: #fff;
-}
+}*/
 
 /* Custom default button */
 .btn-default,
@@ -30,9 +30,9 @@ body {
   background-color: #333;
 }
 body {
-  color: #fff;
+  /*color: #fff;*/
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -78,21 +78,21 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: #4c4b4a; /*IE8 proofing */
+  color: rgba(76,75,74,.75);/**/ 
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgba(255,24,125,.25);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #4c4b4a;
+  border-bottom-color: #ff187d;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +158,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }

@@ -1,9 +1,9 @@
     </div>
   </div>
 </div>
-<footer>
+<!-- <footer>
 	Page rendered in <strong>{elapsed_time}</strong> seconds. 
-</footer>
+</footer> -->
 
 <script type="text/javascript" src="<?php base_url('libs/angular.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php base_url('libs/jquery-3.2.0.min.js'); ?>"></script>

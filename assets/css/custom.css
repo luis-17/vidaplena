@@ -1,0 +1,63 @@
+/* CSS BY luisls1717@gmail.com */ 
+html,body{ 
+    background-color: white; 
+    color: #4c4b4a;
+}
+a{
+	color: #4c4b4a;
+}
+body{ 
+	margin-top: 66px; 
+	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* IE */
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/brooke-cagle-65601.jpeg', sizingMethod='scale')"; 
+    font-family: 'Raleway', sans-serif; 
+}
+.m-n {
+	margin: 0 !important; 
+}
+.mb-n {
+	margin-bottom: 0 !important; 
+}
+.mt-n {
+	margin-top: 0 !important; 
+}
+.ml-n {
+	margin-left: 0 !important; 
+}
+.mr-n {
+	margin-right: 0 !important; 
+}
+.p-n {
+	padding: 0 !important; 
+}
+.label-pink {
+    background-color: #ef7584;
+}
+.btn-primary-2 { 
+	background-color: #0097f1; 
+	color: white;
+}
+
+.cover-container header.masthead {
+	background-color: white; 
+	border-bottom: 1px solid #e8e8e8;
+	padding: 0px 5%;
+}
+.masthead-nav li{
+	text-transform: uppercase;
+}
+.masthead-nav > li > a { 
+    font-size: 15px;
+}
+.cover-container .inner {
+    padding: 12px;
+}
+.label.radius{
+	border-radius: 15px;
+}
