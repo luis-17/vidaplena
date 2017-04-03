@@ -33,7 +33,8 @@ class Registrate extends CI_Controller {
             array(
                 'field' => 'fechanac',
                 'label' => 'Fecha de Nacimiento',
-                'rules' => 'required|trim|callback_si_valid_date'
+                'rules' => 'required|trim'
+                //'rules' => 'required|trim|callback_si_valid_date'
             ),
             array(
                 'field' => 'correo',
@@ -47,9 +48,9 @@ class Registrate extends CI_Controller {
             )
         );
 
-        // $this->form_validation->set_rules($config);
+        $this->form_validation->set_rules($config);
 
-        $this->form_validation->set_rules('fechanac','Fecha de Nacimiento','si_valid_date'); 
+        // $this->form_validation->set_rules('fechanac','Fecha de Nacimiento','si_valid_date'); 
         // $this->form_validation->set_message('rule', 'No ha llenado todos los campos obligatorios.');
         if ($this->form_validation->run() == FALSE){ 
         //if ($this->form_validation->run('reg_usuario') == FALSE){ 

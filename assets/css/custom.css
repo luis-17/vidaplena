@@ -16,7 +16,7 @@ a{
 	position: absolute; 
 	top: 65px;
 }
-.content-page{ 
+.content-page.backimage{ 
 	
 	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center 62px fixed; 
     -webkit-background-size: cover;

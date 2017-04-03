@@ -24,10 +24,10 @@
 			</h3>
           	<nav>
 	            <ul class="nav masthead-nav">
-	              <li class="<?php echo $active['faq']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Preguntas Frecuentes</a></li>
-	              <li class="<?php echo $active['blog']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Blog</a></li>
-	              <li class="<?php echo $active['contacto']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Contacto</a></li>
-	              <li><a class="" href="#" style="padding: 4px; font-size: 20px;">
+	              <li class="<?php echo @$active['faq']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Preguntas Frecuentes</a></li>
+	              <li class="<?php echo @$active['blog']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Blog</a></li>
+	              <li class="<?php echo @$active['contacto']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Contacto</a></li>
+	              <li><a class="" href="<?php echo site_url('login'); ?>" style="padding: 4px; font-size: 20px;">
 	              	<label class="label label-pink radius">Iniciar Sesión</label> 
 	              </a></li>
 	            </ul>

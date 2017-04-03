@@ -5,39 +5,24 @@ class Model_usuario extends CI_Model {
 	{
 		parent::__construct();
 	}
-	// public function m_record_user($datos)
-	// {
-	// 	$data = array(
-	// 		'nombres' => $datos['nombre'],
-	// 		'apellidos' => $datos['apellido'],
-	// 		'emailu' => $datos['email'],
-	// 		'direccion' => $datos['direccion'],
-	// 		'ciudad' => $datos['ciudad'],
-	// 		'paisu' => $datos['pais'],
-	// 		'telefono' => $datos['telefono']
-	// 	);
-	// 	return $this->db->insert('usuario', $data);
-	// }
- //ACCESO AL SISTEMA
-	function m_get_user($data){
+ 	//ACCESO AL SISTEMA 
+	function m_obtener_usuario($datos){
 		//DATOS DEL USUARIO
 		$this->load->helper('security');
-		$this->db = $this->load->database('master', true);
-		$this->db->select('empresa.empresa_id,usuario_id, permiso, nombre_usuario, nombre_bd, dir_img');
-		$this->db->from('usuario',' ');
-		$this->db->join('empresa','usuario.empresa_id = empresa.empresa_id');
-		$this->db->join('com_venta','empresa.empresa_id = com_venta.empresa_id');
-		$this->db->where('nombre_usuario', $data['usuario']);
-		$this->db->where('password', do_hash($data['pass'] , 'md5'));
+		$this->db->select('us.idusuario, us.mail, us.nombre, us.apellido_paterno, us.apellido_materno, us.fecha_nacimiento, us.clave, us.estado_us, us.promedio_global, us.suma_global, tu.idtipousuario, tu.descripcion_tu');
+		$this->db->from('usuario us');
+		$this->db->join('tipo_usuario tu','us.idtipousuario = tu.idtipousuario');
+		$this->db->where('us.mail', $datos['correo']);
+		$this->db->where('us.clave', md5($datos['contrasena']));
 		$this->db->where('estado_u <>', '0');
 		$this->db->limit(1);
 		return $this->db->get()->row();
 	}
-	function m_cambiar_clave_bd_admin($datos)
+	function m_cambiar_clave($datos)
 	{
 		$this->load->helper('security');
 		$data = array(
-			'password' => do_hash($datos['clave'] , 'md5')
+			'clave' => do_hash($datos['clave'] , 'md5')
 		);
 		$this->db->where('nombre_usuario', $datos['nombre_usuario']);
 		$this->db->where('empresa_id', $datos['empresa_id']);
