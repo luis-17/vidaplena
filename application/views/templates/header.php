@@ -5,11 +5,14 @@
 	<meta charset="utf-8">
 	<title>Vida Plena</title> 
 	<link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap.min.css'); ?>" rel="stylesheet">
-	<!-- <link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap-theme.min.css'); ?>" rel="stylesheet"> -->
+	<link href="<?php echo base_url('libs/bootstrap-3.3.7/css/bootstrap-social.css'); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('libs/font-awesome-4.7.0/css/font-awesome.min.css'); ?>" rel="stylesheet">
+	
 	<link href="<?php echo base_url('assets/css/cover.css'); ?>" rel="stylesheet"> 
 	<link href="<?php echo base_url('assets/css/custom.css'); ?>" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet"> 
 </head>
+<!-- <body ng-app="vidaplenaApp" ng-controller="MainController" >  -->
 <body> 
 <div class="site-wrapper">
   <div class="site-wrapper-inner">

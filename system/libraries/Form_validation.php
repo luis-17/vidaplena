@@ -1580,5 +1580,15 @@ class CI_Form_validation {
 		$this->error_string = '';
 		return $this;
 	}
-
+	// public function validDateNac($fecha){ 
+ //     	$fecha = explode('-', $cadena);
+	// 	if( count($fecha) != 3 ){
+	// 		return FALSE;
+	// 	}
+	// 	$dd = $fecha[0];
+	// 	$mm = $fecha[1];
+	// 	$yy = $fecha[2];
+	// 	var_dump($dd,$mm,$yy); exit(); 
+	// 	return true;
+ //     }
 }

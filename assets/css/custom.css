@@ -3,12 +3,22 @@ html,body{
     background-color: white; 
     color: #4c4b4a;
 }
+
+body{
+	font-family: 'Raleway', sans-serif; 
+	margin-top: 66px; 
+}
 a{
 	color: #4c4b4a;
 }
-body{ 
-	margin-top: 66px; 
-	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center center fixed; 
+.cover-container{
+	height: 100%; 
+	position: absolute; 
+	top: 65px;
+}
+.content-page{ 
+	
+	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center 62px fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,7 +26,10 @@ body{
     /* IE */
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/brooke-cagle-65601.jpeg', sizingMethod='scale')"; 
-    font-family: 'Raleway', sans-serif; 
+    height: 100%;
+}
+.upper{
+	text-transform: uppercase !important;
 }
 .m-n {
 	margin: 0 !important; 
@@ -43,7 +56,15 @@ body{
 	background-color: #0097f1; 
 	color: white;
 }
-
+.btn-primary-2:hover {
+    /*background-color: #286090;*/
+    border-color: #204d74;
+    color: #fff;
+}
+.form .errors p{
+	color: #a10305; 
+	font-weight: bold; 
+}
 .cover-container header.masthead {
 	background-color: white; 
 	border-bottom: 1px solid #e8e8e8;
@@ -60,4 +81,53 @@ body{
 }
 .label.radius{
 	border-radius: 15px;
+}
+.cover-container .inner.cover{
+	margin: 0px 15%;
+	padding-top: 10%;
+}
+.cover-container .cover-heading{
+	color: #733939;
+	font-size: 68px;
+}
+.masthead-nav > li > a{
+	font-size: 14px;
+}
+.cover .register-form{
+	background-color: rgba(80,77,79,.4); 
+	min-height: 300px; 
+	border-radius: 24px; 
+}
+
+.cover .register-form h3{ 
+	color: white;
+	padding-top: 10px; 
+	font-size: 28px;
+	padding: 22px 0 10px;
+}
+.cover .register-form .form-group{ 
+	color: white;
+}
+.cover .register-form .form-control{ 
+	border-radius: 10px; 
+}
+.alert.notificable{
+	position: fixed; 
+	top: 70px; 
+	right: 6px;
+}
+@media (max-width: 720px) { 
+	body{
+		margin-top: 0;
+	}
+	.cover-container{
+		top: 0; 
+	}
+  	.cover-container .inner.cover{
+		margin: 0px 4%;
+		padding-top: 1%;
+	}
+	.cover-container .cover-heading{
+		font-size: 60px;
+	}
 }
