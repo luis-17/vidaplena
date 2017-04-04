@@ -7,6 +7,8 @@ class Registrate extends CI_Controller {
         parent::__construct();
         $this->load->model(array('model_usuario'));
         $this->load->driver('cache'); 
+        // Se le asigna a la informacion a la variable $sessionVP.
+        $this->sessionVP = @$this->session->userdata('sess_vp_'.substr(base_url(),-8,7));
     }
 	public function index()
 	{

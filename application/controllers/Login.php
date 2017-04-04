@@ -8,7 +8,7 @@ class Login extends CI_Controller {
         $this->load->driver('cache');
         $this->load->helper(array('form', 'url','otros_helper'));
         // Se le asigna a la informacion a la variable $user.
-        $this->user = @$this->session->userdata('logged_user');
+        $this->sessionVP = @$this->session->userdata('sess_vp_'.substr(base_url(),-8,7));
         $this->load->model(array('model_usuario'));
     }
 	public function index()
@@ -49,41 +49,26 @@ class Login extends CI_Controller {
             $logged_user = $this->model_usuario->m_obtener_usuario($arrData);
             // Si existe el usuario creamos la sesion y redirigimos al index.
             if($logged_user) {
-                $this->session->set_userdata('logged_user', $logged_user);
-                $this->sessionVP = @$this->session->userdata('logged_user');
+                $this->session->set_userdata('sess_vp_'.substr(base_url(),-8,7), $logged_user);
+                $this->sessionVP = @$this->session->userdata('sess_vp_'.substr(base_url(),-8,7)); 
+                // var_dump($this->sessionVP); exit();
                 $msgFlash = array( 
-                    'msg' => 'Bienvenido, '.$this->sessionVP['nombre'],
+                    'msg' => 'Bienvenido, '.$this->sessionVP->nombre,
                     'flag'=> 1 
-                );
+                );/**/
                 $this->session->set_flashdata('msgFlash', $msgFlash); 
                 redirect('extranet/pruebas'); 
             }else{ 
                 // De lo contrario se activa el error_login.
                 $data['error_login'] = TRUE;
+                $this->load->template('login',$data);
             }
-
-            // $arrData = array(); 
-            // $arrData['mail'] = $this->input->post('correo');
-            // $arrData['clave'] = $this->input->post('contrasena');
-            // if( $this->model_usuario->m_login_user($arrData) ){ 
-            //     $msgFlash = array( 
-            //         'msg' => 'Se registró al usuario correctamente.',
-            //         'flag'=> 1 
-            //     ); 
-            // }else{
-            //     $msgFlash = array( 
-            //         'msg' => 'Hubo un error en la transacción.',
-            //         'flag'=> 2 
-            //     ); 
-            // }
-            
-            // redirect('/registrate'); 
         } 
 	}
     public function logout()
     {
-        $this->session->unset_userdata('logged_user');
+        $this->session->unset_userdata('sess_vp_'.substr(base_url(),-8,7));
         $this->cache->clean();
-        redirect('/Extranet/pruebas','refresh');
+        redirect('/','refresh');
     }
 }
