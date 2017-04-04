@@ -1,30 +1,30 @@
-/* CSS BY luisls1717@gmail.com */ 
-html,body{ 
-    background-color: white; 
+/* CSS BY luisls1717@gmail.com */
+html,body{
+    background-color: white;
     color: #4c4b4a;
 }
 
 body{
-	font-family: 'Raleway', sans-serif; 
-	margin-top: 66px; 
+	font-family: 'Raleway', sans-serif;
+	margin-top: 66px;
 }
 a{
 	color: #4c4b4a;
 }
 .cover-container{
-	height: 100%; 
-	position: absolute; 
+	height: 100%;
+	position: absolute;
 	top: 65px;
 }
-.content-page.backimage{ 
-	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center 62px fixed; 
+.content-page.backimage{
+	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center 62px fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /* IE */
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/brooke-cagle-65601.jpeg', sizingMethod='scale')"; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/brooke-cagle-65601.jpeg', sizingMethod='scale')";
     height: 100%;
 }
 .margin-page.regular{
@@ -32,8 +32,8 @@ a{
 	margin: 0 6%;
 }
 .full-block{
-	display: block; 
-	width: 100%; 
+	display: block;
+	width: 100%;
 }
 .text-vp{
 	color: #733939;
@@ -42,28 +42,28 @@ a{
 	text-transform: uppercase !important;
 }
 .m-n {
-	margin: 0 !important; 
+	margin: 0 !important;
 }
 .mb-n {
-	margin-bottom: 0 !important; 
+	margin-bottom: 0 !important;
 }
 .mt-n {
-	margin-top: 0 !important; 
+	margin-top: 0 !important;
 }
 .ml-n {
-	margin-left: 0 !important; 
+	margin-left: 0 !important;
 }
 .mr-n {
-	margin-right: 0 !important; 
+	margin-right: 0 !important;
 }
 .p-n {
-	padding: 0 !important; 
+	padding: 0 !important;
 }
 .label-pink {
     background-color: #ef7584;
 }
-.btn-primary-2 { 
-	background-color: #0097f1; 
+.btn-primary-2 {
+	background-color: #0097f1;
 	color: white;
 }
 .btn-primary-2:hover {
@@ -71,19 +71,20 @@ a{
     border-color: #204d74;
     color: #fff;
 }
+.f-12{font-size: 12px;}
 .form .errors p{
-	color: #a10305; 
-	font-weight: bold; 
+	color: #a10305;
+	font-weight: bold;
 }
 .cover-container header.masthead {
-	background-color: white; 
+	background-color: white;
 	border-bottom: 1px solid #e8e8e8;
 	padding: 0px 5%;
 }
 .masthead-nav li{
 	text-transform: uppercase;
 }
-.masthead-nav > li > a { 
+.masthead-nav > li > a {
     font-size: 15px;
 }
 .cover-container .inner {
@@ -104,34 +105,34 @@ a{
 	font-size: 14px;
 }
 .cover .register-form{
-	background-color: rgba(80,77,79,.4); 
-	min-height: 300px; 
-	border-radius: 24px; 
+	background-color: rgba(80,77,79,.4);
+	min-height: 300px;
+	border-radius: 24px;
 }
 
-.cover .register-form h3{ 
+.cover .register-form h3{
 	color: white;
-	padding-top: 10px; 
+	padding-top: 10px;
 	font-size: 28px;
 	padding: 22px 0 10px;
 }
-.cover .register-form .form-group{ 
+.cover .register-form .form-group{
 	color: white;
 }
-.cover .register-form .form-control{ 
-	border-radius: 10px; 
+.cover .register-form .form-control{
+	border-radius: 10px;
 }
 .alert.notificable{
-	position: fixed; 
-	top: 70px; 
+	position: fixed;
+	top: 70px;
 	right: 6px;
 }
-@media (max-width: 720px) { 
+@media (max-width: 720px) {
 	body{
 		margin-top: 0;
 	}
 	.cover-container{
-		top: 0; 
+		top: 0;
 	}
   	.cover-container .inner.cover{
 		margin: 0px 4%;
