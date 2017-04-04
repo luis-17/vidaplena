@@ -14,7 +14,7 @@ class Model_usuario extends CI_Model {
 		$this->db->join('tipo_usuario tu','us.idtipousuario = tu.idtipousuario');
 		$this->db->where('us.mail', $datos['correo']);
 		$this->db->where('us.clave', md5($datos['contrasena']));
-		$this->db->where('estado_u <>', '0');
+		$this->db->where('estado_us <>', '0');
 		$this->db->limit(1);
 		return $this->db->get()->row();
 	}
@@ -32,9 +32,9 @@ class Model_usuario extends CI_Model {
 	{
 		$data = array( 
 			'mail' => $datos['mail'],
-			'nombre' => $datos['nombre'],
-			'apellido_paterno' => $datos['apellido_paterno'],
-			'apellido_materno' => $datos['apellido_materno'],
+			'nombre' => strtoupper($datos['nombre']),
+			'apellido_paterno' => strtoupper($datos['apellido_paterno']),
+			'apellido_materno' => strtoupper($datos['apellido_materno']),
 			'fecha_nacimiento' => $datos['fecha_nacimiento'],
 			'clave' => md5($datos['clave']),
 			'updatedAt' => date('Y-m-d H:i:s'),

@@ -6,9 +6,9 @@ class Extranet extends CI_Controller {
     {
         parent::__construct(); 
         $this->load->driver('cache');
-        $this->load->helper(array('form', 'url','otros_helper'));
+        $this->load->helper(array('form', 'url'));
         // Se le asigna a la informacion a la variable $user.
-        $this->user = @$this->session->userdata('logged_user');
+        $this->sessionVP = @$this->session->userdata('logged_user');
         $this->load->model(array('model_usuario'));
     }
 	public function pruebas()

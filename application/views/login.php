@@ -13,7 +13,10 @@
             ?> 
               <h3> INICIAR SESIÓN </h3> 
               <div class="errors">
-                <?php echo validation_errors(); ?> 
+              <?php if(@$error_login): ?>
+                Error en el usuario o contraseña. 
+                <br />
+              <?php endif; ?>
               </div>
               <div class="form-group col-sm-12" >
                 <label for="correo" class="sr-only">Correo Electrónico</label>

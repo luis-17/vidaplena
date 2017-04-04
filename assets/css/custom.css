@@ -17,7 +17,6 @@ a{
 	top: 65px;
 }
 .content-page.backimage{ 
-	
 	background: url(../images/brooke-cagle-65601.jpeg) no-repeat center 62px fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,6 +26,17 @@ a{
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/brooke-cagle-65601.jpeg', sizingMethod='scale')"; 
     height: 100%;
+}
+.margin-page.regular{
+	text-align: left;
+	margin: 0 6%;
+}
+.full-block{
+	display: block; 
+	width: 100%; 
+}
+.text-vp{
+	color: #733939;
 }
 .upper{
 	text-transform: uppercase !important;

@@ -50,8 +50,13 @@ class Login extends CI_Controller {
             // Si existe el usuario creamos la sesion y redirigimos al index.
             if($logged_user) {
                 $this->session->set_userdata('logged_user', $logged_user);
-                $this->user = @$this->session->userdata('logged_user');
-                redirect('extranet'); 
+                $this->sessionVP = @$this->session->userdata('logged_user');
+                $msgFlash = array( 
+                    'msg' => 'Bienvenido, '.$this->sessionVP['nombre'],
+                    'flag'=> 1 
+                );
+                $this->session->set_flashdata('msgFlash', $msgFlash); 
+                redirect('extranet/pruebas'); 
             }else{ 
                 // De lo contrario se activa el error_login.
                 $data['error_login'] = TRUE;
@@ -71,7 +76,7 @@ class Login extends CI_Controller {
             //         'flag'=> 2 
             //     ); 
             // }
-            // $this->session->set_flashdata('msgFlash', $msgFlash); 
+            
             // redirect('/registrate'); 
         } 
 	}
