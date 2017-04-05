@@ -29,5 +29,17 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/controllers/MainController.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/directives.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/app.js'); ?>"></script>
+
+<!-- Incluyendo .js de Culqi Checkout-->
+<script src="https://checkout.culqi.com/v2"></script>
+<script>
+	Culqi.publicKey = 'pk_test_Im4XoJ4SwSqCSyoX';
+    Culqi.settings({
+        title: 'Culqi Store',
+        currency: 'PEN',
+        description: 'Dieta por una semana',
+        amount: 5500
+    });
+</script>
 </body>
 </html>

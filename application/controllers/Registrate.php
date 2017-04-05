@@ -6,6 +6,7 @@ class Registrate extends CI_Controller {
     {
         parent::__construct();
         $this->load->model(array('model_usuario'));
+        $this->load->helper(array('form', 'url','fechas_helper'));
         $this->load->driver('cache'); 
         // Se le asigna a la informacion a la variable $sessionVP.
         $this->sessionVP = @$this->session->userdata('sess_vp_'.substr(base_url(),-8,7));
@@ -63,6 +64,8 @@ class Registrate extends CI_Controller {
             $arrData['apellido_paterno'] = $this->input->post('apellidos');
             $arrData['apellido_materno'] = $this->input->post('apellidos');
             $arrData['fecha_nacimiento'] = $this->input->post('fechanac');
+            $arrData['fecha_nacimiento'] = darFormatoYMD($arrData['fecha_nacimiento']);
+            // var_dump($arrData['fecha_nacimiento']); exit(); 
             $arrData['mail'] = $this->input->post('correo');
             $arrData['clave'] = $this->input->post('contrasena');
             if( $this->model_usuario->m_registrar($arrData) ){ 

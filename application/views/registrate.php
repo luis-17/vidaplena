@@ -40,7 +40,6 @@
                   <input required type="checkbox" name="check_terminos"> Acepto los <strong style="text-decoration:underline;"> Términos y Condiciones </strong>
                 </label>
               </div>
-              
               <div class="form-group col-sm-12 ">
                 <button type="submit" class="btn btn-success btn-lg btn-block upper"> Registrar </button>
               </div>

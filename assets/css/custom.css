@@ -12,6 +12,9 @@ body{
 a{
 	color: #4c4b4a;
 }
+label{
+	font-weight: 400;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 }
@@ -37,6 +40,10 @@ a{
 .margin-page.regular{
 	text-align: left;
 	margin: 0 6%;
+}
+.margin-page.servicio{
+	text-align: left;
+	margin: 0 10%;
 }
 .full-block{
 	display: block;
@@ -72,6 +79,7 @@ a{
 .btn-pink { 
 	border-radius: 10px; 
     background-color: #fd2c50; 
+    color: white;
 }
 .btn-primary-2 {
 	background-color: #0097f1;
@@ -82,6 +90,33 @@ a{
     border-color: #204d74;
     color: #fff;
 }
+.panel-resultado{ 
+	font-weight: 400;
+	margin-bottom: 20px;
+	max-width: 800px;
+	border-radius: 30px; 
+	margin: auto;
+}
+.panel-resultado .subpanel-1{
+	background-color: #7bbcce;
+	display: inline-block;
+	color: red;
+	text-align: left;
+	/*padding: 10px 30px;*/
+	min-height: 340px;
+}
+.panel-resultado .subpanel-2{
+	background-color: #cacac9;
+	display: inline-block;
+	color: black;
+	text-align: left;
+	/*padding: 10px 30px;*/
+	min-height: 340px;
+}
+.panel-resultado .subpanel-1 .image{
+	padding-top: 25%;
+}
+
 
 .panel-blue{
 	background-color: #0089c7;
@@ -98,14 +133,19 @@ a{
 	font-size: 16px;
 	text-align: left;
 }
-.panel-blue button{
+.panel-blue button, .panel-blue a{
 	bottom: 30px;
     left: 12%;
     position: absolute;
     width: 76%;
 }
 .f-12{font-size: 12px;}
-
+.fw-500{
+	font-weight: 500;
+}
+.fw-300{
+	font-weight: 300;
+}
 .form .errors p{
 	color: #a10305;
 	font-weight: bold;
@@ -161,6 +201,12 @@ a{
 	top: 70px;
 	right: 6px;
 }
+@media (max-width: 1360px) {
+	.margin-page.servicio{
+		text-align: left;
+		margin: 0 5%;
+	}
+}
 @media (max-width: 720px) {
 	body{
 		margin-top: 0;
@@ -174,5 +220,8 @@ a{
 	}
 	.cover-container .cover-heading{
 		font-size: 60px;
+	}
+	.panel-resultado .subpanel-1 .image{
+		padding-top: 10%;
 	}
 }

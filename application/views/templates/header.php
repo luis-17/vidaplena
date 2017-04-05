@@ -30,10 +30,10 @@
 	              <li class="<?php echo @$active['contacto']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Contacto</a></li>
 	              <?php if(@$this->sessionVP){ ?>
 	              <li>
-		              <a class="" href="" style="color: #0089c7;font-size: 20px;font-weight: 300;padding: 4px;display: inline;"> 
+		              <a class="" href="" style="color: #0089c7;font-size: 20px;font-weight: 300;display: inline;"> 
 		              	<i class="glyphicon glyphicon-user"></i> <?php echo $this->sessionVP->nombre.' '.$this->sessionVP->apellido_paterno ?>
 		              </a>
-		              <small style="font-size: 10px;">
+		              <small style="font-size: 10px;vertical-align: top;">
 						<a href="<?php echo site_url('login/logout'); ?>">[Cerrar sesión]</a>
 					  </small>
 	              </li>
