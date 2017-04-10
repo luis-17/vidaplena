@@ -53,7 +53,6 @@
   </div>
 </div> <!-- -->
 <script>
-//jQuery(document).ready(function($){
   setTimeout(function() {
     $('.comprarServicio').on('click', function(e) { 
       console.log('click me');
@@ -63,6 +62,5 @@
     });
   },1000);
   console.log('load meeeeee'); 
-  
-//});
+
 </script>

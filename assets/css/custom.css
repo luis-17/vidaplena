@@ -49,6 +49,13 @@ label{
 	display: block;
 	width: 100%;
 }
+.help-inline {
+    color: #737373;
+    display: inline;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 70%;
+}
 .text-vp{
 	color: #733939;
 }
@@ -73,12 +80,22 @@ label{
 .p-n {
 	padding: 0 !important;
 }
+.truncate { 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 .label-pink {
     background-color: #ef7584; 
 }
 .btn-pink { 
 	border-radius: 10px; 
     background-color: #fd2c50; 
+    color: white;
+}
+.btn-pink-2 { 
+	border-radius: 10px; 
+    background-color: #ef7584; 
     color: white;
 }
 .btn-primary-2 {
@@ -90,6 +107,17 @@ label{
     border-color: #204d74;
     color: #fff;
 }
+
+.masthead-nav > li > a.btn:hover, .masthead-nav > li > a.btn:focus {
+    background-color: #fa364e;
+    border-bottom-color: rgba(255, 24, 125, 0.25);
+}
+.masthead-nav > li > a.btn { 
+  font-weight: 400;
+  color: white;
+  font-size: 12px;
+}
+
 .panel-resultado{ 
 	font-weight: 400;
 	margin-bottom: 20px;
@@ -148,7 +176,8 @@ label{
 }
 .form .errors p{
 	color: #a10305;
-	font-weight: bold;
+	font-weight: 500;
+	line-height: .8;
 }
 .cover-container header.masthead {
 	background-color: white;
@@ -164,12 +193,12 @@ label{
 .cover-container .inner {
     padding: 12px;
 }
-.label.radius{
+.label.radius, .btn.radius{
 	border-radius: 15px;
 }
 .cover-container .inner.cover{
 	margin: 0px 15%;
-	padding-top: 10%;
+	padding-top: 6%;
 }
 .cover-container .cover-heading{
 	color: #733939;
@@ -177,7 +206,9 @@ label{
 }
 .masthead-nav > li > a{
 	font-size: 14px;
+	padding-bottom: 4px;
 }
+
 .cover .register-form{
 	background-color: rgba(80,77,79,.4);
 	min-height: 300px;
@@ -201,6 +232,17 @@ label{
 	top: 70px;
 	right: 6px;
 }
+.link.username{
+	color: #0089c7;
+	font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	max-width: 250px;
+	float: left;
+	padding-bottom: 4px;
+	/*padding-bottom: 0;*/
+}
+
 @media (max-width: 1360px) {
 	.margin-page.servicio{
 		text-align: left;
@@ -223,5 +265,8 @@ label{
 	}
 	.panel-resultado .subpanel-1 .image{
 		padding-top: 10%;
+	}
+	.link.username{
+		margin-bottom: 10px;
 	}
 }

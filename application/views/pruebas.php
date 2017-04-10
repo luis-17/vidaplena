@@ -69,10 +69,10 @@
 	    <div class="col-md-12">
 
 	    	<?php 
-	        $atribs = array('id' => 'form-agregarEstadoTrab','style'=> 'margin: auto; max-width: 500px; font-weight: 500;'); 
+	        $atribs = array('class' => 'form','style'=> 'margin: auto; max-width: 500px; font-weight: 500;'); 
 	        echo form_open('Extranet/pruebas/'.$fEje['segmento_amigable'],$atribs);
 	      ?>
-	    		<div class="errors">
+	    	<div class="errors col-sm-12">
 	          <?php echo validation_errors(); ?> 
 	        </div>
 	        <div class="form-group col-sm-12" >
@@ -81,15 +81,15 @@
 	          	value="<?php echo $this->sessionVP->fecha_nacimiento; ?>"  />
 	        </div>
 	        <div class="form-group col-sm-6" >
-	        	<label for="peso" class="">Peso</label>
+	        	<label for="peso" class="">Peso <small class="help-inline"> (En kg.) </small> </label>
 	        	<input type="text" class="form-control" id="peso" name="peso" placeholder="Peso(Kg.)" value="<?php echo set_value('peso'); ?>" />
 	        </div>
 	        <div class="form-group col-sm-6" >
-	          <label for="talla" class="">Talla</label>
+	          <label for="talla" class="">Talla <small class="help-inline"> (En cm.) </small> </label>
 	          <input type="text" class="form-control" id="talla" name="talla" placeholder="Talla(Cm.)" value="<?php echo set_value('talla'); ?>" />
 	        </div>
 	        <div class="form-group col-sm-12" >
-	          <label for="cintura" class="">Cintura</label>
+	          <label for="cintura" class="">Cintura <small class="help-inline"> (En cm.) </small></label>
 	          <input type="date" class="form-control" id="cintura" name="cintura" placeholder="Cintura(Cm.)" value="<?php echo set_value('cintura'); ?>" />
 	        </div>
 	        <div class="form-group col-sm-12" >

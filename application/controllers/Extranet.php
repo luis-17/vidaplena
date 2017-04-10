@@ -43,7 +43,7 @@ class Extranet extends CI_Controller {
             array(
                 'field' => 'talla',
                 'label' => 'Talla',
-                'rules' => 'required|trim|numeric'
+                'rules' => 'required|trim|integer'
             ),
             /*array(
                 'field' => 'fechanac',
@@ -54,7 +54,7 @@ class Extranet extends CI_Controller {
             array(
                 'field' => 'cintura',
                 'label' => 'Cintura',
-                'rules' => 'required|trim|numeric'
+                'rules' => 'required|trim|integer'
             ),
             array(
                 'field' => 'sexo',

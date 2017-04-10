@@ -23,6 +23,7 @@
 <script type="text/javascript" src="<?php echo base_url('libs/jquery-3.2.0.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('libs/bootstrap-3.3.7/js/bootstrap.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('libs/ui-bootstrap-tpls-2.5.0.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('libs/jquery-mask-plugin/jquery.mask.min.js'); ?>"></script>
 
 <!-- APP ANGULAR --> 
 
