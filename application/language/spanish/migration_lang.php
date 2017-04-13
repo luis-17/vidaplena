@@ -1,13 +1,20 @@
 <?php
+/**
+ * System messages translation for CodeIgniter(tm)
+ *
+ * @author	CodeIgniter community
+ * @author	Iban Eguia
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['migration_none_found']			= "No se encontraron migraciones.";
-$lang['migration_not_found']			= "Esta migraci髇 no puede ser encontrada.";
-$lang['migration_multiple_version']		= "Hay varias migraciones con el mismo n鷐ero de versi髇: %d.";
-$lang['migration_class_doesnt_exist']	= "La clase de migraci髇 \"%s\" no se puede encontrar.";
-$lang['migration_missing_up_method']	= "La clase de migraci髇 \"%s\" no tiene el m閠odo 'up'.";
-$lang['migration_missing_down_method']	= "La clase de migraci髇 \"%s\" no tiene el m閠odo 'down'.";
-$lang['migration_invalid_filename']		= "La migraci髇 \"%s\" tiene un nombre de archivo inv醠ido.";
-
-
-/* End of file migration_lang.php */
-/* Location: ./system/language/english/migration_lang.php */
+$lang['migration_none_found']		= 'No se ha encontrado ninguna migraci贸n.';
+$lang['migration_not_found']		= 'No se ha encontrado ninguna migraci贸n con el n煤mero de versi贸n: %s.';
+$lang['migration_sequence_gap']		= 'Hay un vac铆o en la migraci贸n, cerca del n煤mero de versi贸n: %s.';
+$lang['migration_multiple_version']	= 'Hay m煤ltiples migraciones con el mismo n煤mero de versi贸n: %s.';
+$lang['migration_class_doesnt_exist']	= 'La clase de migraci贸n "%s" no ha podido ser encontrada.';
+$lang['migration_missing_up_method']	= 'A la clase de migraci贸n "%s" le falta el m茅todo "up".';
+$lang['migration_missing_down_method']	= 'A la clase de migraci贸n "%s" le falta el m茅todo "down".';
+$lang['migration_invalid_filename']	= 'La migraci贸n "%s" tiene un nombre de archivo no v谩lido.';
