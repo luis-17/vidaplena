@@ -45,12 +45,6 @@ class Extranet extends CI_Controller {
                 'label' => 'Talla',
                 'rules' => 'required|trim|integer'
             ),
-            /*array(
-                'field' => 'fechanac',
-                'label' => 'Fecha de Nacimiento',
-                'rules' => 'required|trim'
-                //'rules' => 'required|trim|callback_si_valid_date'
-            ),*/
             array(
                 'field' => 'cintura',
                 'label' => 'Cintura',
@@ -200,7 +194,6 @@ class Extranet extends CI_Controller {
               'cintura' => string '100' (length=3)
               'sexo' => string 'M' (length=1)
         */
-        
 	}
     public function servicio($eje)
     {

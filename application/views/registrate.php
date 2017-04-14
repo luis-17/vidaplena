@@ -25,7 +25,7 @@
               <div class="form-group col-sm-12" >
                 <label for="fechanac" class="">Fecha de Nacimiento 
                   <small style="color: white; font-style: oblique;" class="help-block m-n"> (dd-mm-yyyy) </small> </label>
-                <input type="date" class="form-control input-lg" id="fechanac" name="fechanac" placeholder="Fecha de Nacimiento" value="<?php echo set_value('fechanac'); ?>" />
+                <input type="text" class="form-control input-lg" id="fechanac" name="fechanac" placeholder="Fecha de Nacimiento" value="<?php echo set_value('fechanac'); ?>" />
               </div>
               <div class="form-group col-sm-12" >
                 <label for="correo" class="">Correo Electrónico</label>

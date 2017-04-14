@@ -90,7 +90,7 @@
 	        </div>
 	        <div class="form-group col-sm-12" >
 	          <label for="cintura" class="">Cintura <small class="help-inline"> (En cm.) </small></label>
-	          <input type="date" class="form-control" id="cintura" name="cintura" placeholder="Cintura(Cm.)" value="<?php echo set_value('cintura'); ?>" />
+	          <input type="text" class="form-control" id="cintura" name="cintura" placeholder="Cintura(Cm.)" value="<?php echo set_value('cintura'); ?>" />
 	        </div>
 	        <div class="form-group col-sm-12" >
 	          <label for="sexo" class="">Sexo</label> 

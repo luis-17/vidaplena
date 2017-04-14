@@ -1,17 +1,19 @@
     </div>
   </div>
 </div>
-<?php if(@$this->session->flashdata('msgFlash')['flag'] === 1 ){ ?> 
+<?php 
+	$fSession = $this->session->flashdata('msgFlash');
+	if(@$fSession['flag'] === 1 ){ ?> 
 	<div class="alert alert-success alert-dismissible notificable" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<strong>Éxito!</strong> <?php echo $this->session->flashdata('msgFlash')['msg']; ?> 
+		<strong>Éxito!</strong> <?php echo @$fSession['msg']; ?> 
 	</div>
 <?php } ?>
 
-<?php if(@$this->session->flashdata('msgFlash')['flag'] === 2 ){ ?> 
+<?php if(@$fSession['flag'] === 2 ){ ?> 
 	<div class="alert alert-danger alert-dismissible notificable" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<strong>Error!</strong> <?php echo $this->session->flashdata('msgFlash')['msg']; ?> 
+		<strong>Error!</strong> <?php echo @$fSession['msg']; ?> 
 	</div>
 <?php } ?>
 <!--  -->
