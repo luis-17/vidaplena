@@ -20,11 +20,11 @@
 		    	<div class="subpanel-2 col-sm-8 col-xs-12" style="border-radius: 10px;">
 		    		<h3 class="text-center" style="padding-bottom: 20px;"> RESULTADOS </h3>
 		    		<?php if($result['estado_general']){  ?>
-		    		<p class=""> Tu estado de salud es muy bueno... Mira los detalles: </p> 
+		    		<p class=""> Tu estado nutricional es bueno, mira los detalles: </p> 
 		    		<?php
 		    			}else{
 		    		?>
-		    		<p class=""> Tu estado de salud puede mejorar... Mira los detalles: </p> 
+		    		<p class=""> Tu estado nutricional no es favorable, mira los detalles: </p> 
 		    		<?php 
 		    			}
 		    		?>
@@ -50,7 +50,7 @@
 		    		</strong>
 		    		<p style="font-weight: bold;color:#fd7210;">Tu peso ideal es <?php echo $result['peso_ideal'].'kg.'; ?> </p>
 
-		    		<a href="<?php echo site_url('Extranet/servicio/').$fEje['segmento_amigable']; ?>" class="btn btn-pink" style="margin: 20px auto; display: block;"> RECOMENDACIONES </a>
+		    		<a href="<?php echo site_url('Extranet/servicio/').$fEje['segmento_amigable'].'/'.$result['estado_result']; ?>" class="btn btn-pink" style="margin: 20px auto; display: block;"> RECOMENDACIONES </a>
 		    	</div>
 		    </div>
 	    </div>

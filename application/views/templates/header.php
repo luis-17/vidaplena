@@ -25,9 +25,9 @@
 			</h3>
           	<nav>
 	            <ul class="nav masthead-nav">
-	              <li class="<?php echo @$active['faq']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Preguntas Frecuentes</a></li>
-	              <li class="<?php echo @$active['blog']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Blog</a></li>
-	              <li class="<?php echo @$active['contacto']; ?>"><a href="http://getbootstrap.com/examples/cover/#">Contacto</a></li>
+	              <li class="<?php echo @$active['faq']; ?>"><a href="#">Preguntas Frecuentes</a></li>
+	              <li class="<?php echo @$active['blog']; ?>"><a href="#">Blog</a></li>
+	              <li class="<?php echo @$active['contacto']; ?>"><a href="#">Contacto</a></li>
 	              <?php if(@$this->sessionVP){ ?>
 	              <li style="vertical-align: bottom;">
 		              <a class="link username truncate" href="#" style=""> 

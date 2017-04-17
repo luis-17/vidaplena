@@ -182,6 +182,11 @@ class Extranet extends CI_Controller {
                     'flag'=> 2 
                 ); 
             }*/
+            if( $arrData['estado_general'] ){
+                $arrData['estado_result'] = 'positivo';
+            }else{
+                $arrData['estado_result'] = 'negativo';
+            }
             $data['result'] = $arrData;
             $this->load->template('resultado',$data); 
         } 
@@ -195,13 +200,14 @@ class Extranet extends CI_Controller {
               'sexo' => string 'M' (length=1)
         */
 	}
-    public function servicio($eje)
+    public function servicio($eje,$estado)
     {
         $data['active'] = array(
             'faq'=> NULL,
             'blog'=> NULL,
             'contacto'=> NULL
         );
+        $data['estado_result'] = $estado; 
         $lista = $this->model_servicio->m_obtener_servicios_por_eje($eje);
         // var_dump('<pre>',$lista);
         $data['servicios'] = $lista;

@@ -26,13 +26,23 @@
           <div class="col-md-12"> 
             <div class="consejos" style="height:320px;">
               <strong style="color: #ebf30a;display: block;padding: 70px 20px 50px;text-align: center;font-size: 18px;">SIGUE ESTOS 5 PRÁCTICOS CONSEJOS</strong>
+              <?php if( $estado_result === 'positivo' ){ ?> 
               <ul class="list">
-                <li> BEBE 2 LITROS DE AGUA AL DÍA </li> 
-                <li> CAMINA UNA HORA AL DÍA </li> 
-                <li> COME FRUTA </li> 
-                <li> OTRO CONSEJO MAS 1 </li>
-                <li> OTRO CONSEJO MAS 2 </li>
+                <li> Mantener un horario fijo para las comidas y come despacio </li> 
+                <li> Consumir una gran variedad de frutas y verduras. </li> 
+                <li> Consumir pescado, especialmente azul, 3 o más veces por semana. </li> 
+                <li> Realizar algún ejercicio físico que se adapte a ti. </li>
+                <li> Consume 8 vasos de agua al día para mantenerte hidratado. </li>
               </ul>
+              <?php }elseif($estado_result === 'negativo'){ ?>
+              <ul class="list">
+                <li> Necesitas pasar CONSULTA con tu nutricionista. </li> 
+                <li> Consume 8 vasos de agua al día para mantenerte hidratado. </li> 
+                <li> No debes omitir comidas como el desayuno. </li> 
+                <li> Evitar refrescos y bebidas azucaradas. </li>
+                <li> Reduce el consumo de productos industrializados. </li>
+              </ul>
+              <?php } ?>
             </div>
           </div>
           <div class="col-md-6"> 
