@@ -21,7 +21,7 @@
       <header class="masthead clearfix"> 
       	<div class="inner">
 			<h3 class="masthead-brand mt-n">
-				<a href="../"> <img src="<?php echo base_url('assets/images/vidaplena.png'); ?>" /> </a>
+				<a href="#"> <img src="<?php echo base_url('assets/images/vidaplena.png'); ?>" /> </a>
 			</h3>
           	<nav>
 	            <ul class="nav masthead-nav">
